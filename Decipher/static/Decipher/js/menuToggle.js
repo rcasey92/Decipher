@@ -14,9 +14,7 @@ function hideNav(navmenu) {
     $('#nav-overlay').remove();
     $('body').css('overflow', 'scroll');
 
-    slideHeaderIn($('#header'));
-    slideContentBodyIn($('#content-body'));
-    slideFooterIn($('#footer'));
+    slideIn($('#header'), $('#content-body'), $('#footer'));
 }
 
 function showNav(navmenu) {
@@ -28,37 +26,17 @@ function showNav(navmenu) {
     $(body_selector).append(overlay);
     $(body_selector).css('overflow', 'hidden');
 
-    slideHeaderOut($('#header'));
-    slideContentBodyOut($('#content-body'));
-    slideFooterOut($('#footer'));
+    slideOut($('#header'), $('#content-body'), $('#footer'));
 }
 
-function slideHeaderOut(header) {
+function slideOut(header, body, footer) {
     $(header).css('transform', 'translate(280px)');
-    $(header).css('transition', 'all 400ms linear');
-}
-
-function slideHeaderIn(header) {
-    $(header).css('transform', 'translate(0)');
-    $(header).css('transition', 'all 400ms linear');
-}
-
-function slideContentBodyOut(body) {
     $(body).css('transform', 'translate(280px)');
-    $(body).css('transition', 'all 400ms linear');
-}
-
-function slideContentBodyIn(body) {
-    $(body).css('transform', 'translate(0)');
-    $(body).css('transition', 'all 400ms linear');
-}
-
-function slideFooterOut(footer) {
     $(footer).css('transform', 'translate(280px)');
-    $(footer).css('transition', 'all 400ms linear');
 }
 
-function slideFooterIn(footer) {
+function slideIn(header, body, footer) {
+    $(header).css('transform', 'translate(0)');
+    $(body).css('transform', 'translate(0)');
     $(footer).css('transform', 'translate(0)');
-    $(footer).css('transition', 'all 400ms linear');
 }
