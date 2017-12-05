@@ -1,0 +1,73 @@
+{% load staticfiles %}
+<link rel="stylesheet" type="text/css" href="{%  static 'Decipher/css/style.css' %}" />
+<script type="text/javascript" src="{% static '/Decipher/js/jquery-3.2.1.min.js' %}"></script>
+<script type="text/javascript" src="{% static '/Decipher/jquery-ui-1.12.1/jquery-ui.min.js' %}"></script>
+<script type="text/javascript" src="{% static '/Decipher/js/menuToggle.js' %}"></script>
+
+<div class="header" id="header">
+    {% comment %}<img id="piano-background" src="{% static 'Decipher/assets/images/piano-background-img.jpg' %}">{% endcomment %}
+    <span class="nav" id="nav">
+        <div class="nav-button" id="nav-button">
+            <img id="nav-image" src="{% static 'Decipher/assets/images/menu.png' %}">
+        </div>
+        <span class="nav-label" id="nav-label">Menu</span>
+    </span>
+    <span class="title" id="title">Decipher.</span>
+    <span class="login" id="login">Login</span>
+</div>
+<section class="nav-menu" id="nav-menu">
+    <div class="page-list" id="page-list">
+        <ul class="menu-list" id="menu-list">
+            <li class="list-menu-header" id="list-menu-header">Menu</li>
+            <br/>
+            <br/>
+            <br/>
+            <li class="menu-item" id="menu-item">Home</li>
+            <li class="menu-item" id="menu-item">Purpose</li>
+            <li class="menu-item" id="menu-item">Upload</li>
+            <li class="menu-item" id="menu-item">Archive</li>
+            <br/>
+            <li class="menu-item" id="menu-item">Login</li>
+            <li class="menu-item" id="menu-item">About</li>
+        </ul>
+    </div>
+    <div class="media-container" id="media-container">
+        <span class="facebook-container" id="facebook-container">
+            <img class="icon" id="icon" src="{% static 'Decipher/assets/images/facebook-icon24.png' %}">
+        </span>
+        <span class="instagram-container" id="instagram-container">
+            <img class="icon" id="icon" src="{% static 'Decipher/assets/images/instagram-icon24.png' %}">
+        </span>
+        <span class="twitter-container" id="twitter-container">
+            <img class="icon" id="icon" src="{% static 'Decipher/assets/images/twitter-icon24.png' %}">
+        </span>
+    </div>
+</section>
+<div class="content-body" id="content-body">
+    <p class="ipsum-paragraph">
+        Lorem ipsum dolor sit amet, auctor odio cras morbi non porta suspendisse, sem eros rhoncus semper non lectus ullamcorper, in rhoncus at vel vitae, erat maecenas, magna lorem scelerisque pellentesque amet. Hac rhoncus vivamus ac nulla, duis mauris inceptos egestas mauris porttitor, ut et semper. Viverra magna, pellentesque erat suscipit etiam lorem, vel phasellus fermentum magna. Consequat nullam varius ac, sodales porttitor iaculis ut risus dui, quam et. Tincidunt molestiae duis augue interdum, magna nostra fusce blandit eu odio mauris, arcu urna, est aliquet sed. Nunc vivamus. Auctor sit tellus mauris et tortor.
+    </p>
+    <p class="ipsum-paragraph">
+        Bibendum pellentesque erat praesent leo, suspendisse wisi mollis a ipsum, curabitur duis nam elit nisl magna, sem eu velit. Sed suspendisse et ipsum dignissim massa, et commodo sed ipsum velit lorem magna, elit eu aut odio elit. A sollicitudin sodales odio, ullamcorper suspendisse mauris, in accumsan, maecenas id elit. Pellentesque pede et in ut a. Sit phasellus ipsum aliquet, risus wisi morbi, sodales facilisis massa lectus neque risus a. Arcu sed odio eget, quam porro diam nunc, ante non est justo ut tincidunt pharetra.
+    </p>
+    <p class="ipsum-paragraph">
+        Nullam tellus nulla, commodo pharetra ipsum gravida vehicula. Eu nisl viverra donec nibh aenean, tortor orci cras voluptatem phasellus phasellus ac, et nunc quis vehicula, vestibulum lacus, pede sunt nulla elit praesent quam turpis. In sem a eu. Eu augue aenean, quam nullam nec donec, platea enim fames nullam, commodo pede ad lectus aliquet adipiscing. Ipsum purus per neque venenatis elementum sed. Massa ante blandit, id lorem nunc, libero nullam nec praesent feugiat parturient habitant. Tempor magna gravida, aptent aenean ut eleifend. Consectetur praesentium commodo orci nam. Vivamus nec urna nam aliquam pulvinar, leo erat in risus, turpis sem elit sed penatibus pede. Dui vitae dictum, blandit officia vel odio, volutpat suspendisse sodales tristique wisi, ultrices porta, massa vivamus ac montes elit aliquet in. Convallis eget, parturient vitae lacus sagittis interdum nec vel, rhoncus ut mus urna a libero ante, dolor lacus, magna sit dolor mattis penatibus suscipit. Et quis et dui, velit quam aliquet, ut odio sit, facilisis ut nascetur.
+    </p>
+    <p class="ipsum-paragraph">
+        Voluptas lorem aliquet tempor, molestie orci imperdiet leo suscipit, suspendisse non fusce ac, vestibulum odio ultrices. Ipsum dolor ac quisque sit, nibh ac interdum, risus ipsum est nunc mi, in erat libero tortor ornare scelerisque, interdum pede magnis lectus est ullamcorper. Praesent fusce. Sed eu et venenatis, ante natoque et pretium, risus cillum enim fermentum, sollicitudin vel mauris euismod velit quis. Suscipit sollicitudin quis vel ac in, montes repellat augue, vestibulum nullam. Mauris in, lorem mus semper ac nam bibendum varius, non risus. Risus dis sit, non dolor, libero urna nec dolor, sed nam in. Sagittis gravida eros nunc eros, donec neque nibh mollitia convallis facilisis mauris, erat dolor fames, felis vehicula dictum molestie molestie lectus quam. Vel aliquam varius, dui hendrerit potenti faucibus eu imperdiet ante, eu aenean tellus, ipsum tortor aenean neque sed ut. Justo imperdiet mollis tempor, nec ex, non aliquam ligula sit semper mollis in, aliquam pharetra dolor nonummy.
+    </p>
+</div>
+<div class="footer" id="footer">
+    <div class="info-div" id="info-div"></div>
+</div>
+{% comment %}
+{% if latest_question_list %}
+    <ul>
+        {% for question in latest_question_list %}
+            <li><a href="{% url 'detail' question.id %}">{{ question.question_text }}</a></li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <p>No polls are available.</p>
+{% endif %}
+{% endcomment %}

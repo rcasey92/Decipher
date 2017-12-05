@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    background: #f3f3f5;
+    left: 0;
+    right: 0;
+}
+
+html {
+    font-family: sans-serif;
+    font-size: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+body, html {
+    font-size: 100%;
+}
+
+#header {
+    position: fixed;
+    display: flex;
+    flex: 0 0 auto;
+    width: 100%;
+    height: 52px;
+    background-color: white;
+    z-index: 1;
+    border-bottom: 1px solid #DEDFE0;
+    overflow: hidden;
+}
+
+#title {
+    position: relative;
+    left: 40%;
+    height: 52px;
+    font-size: 2.2rem;
+    font-family: AvenirNextLTPro-Demi;;
+    font-weight: 400;
+    letter-spacing: .3rem;
+    font-style: normal;
+    line-height: 1.5;
+    overflow: hidden;
+}
+
+#login {
+    position: absolute;
+    top: 0;
+    right: 0;
+    letter-spacing: .1rem;
+    font-size: 80%;
+    margin-top: 1.3em;
+    margin-right: 3.1em;
+    cursor: pointer;
+}
+/* Nav bar/menu css declarations */
+
+#nav {
+    display: inherit;
+    width: 52px;
+    height: 52px;
+}
+
+#nav-button {
+    width: 72px;
+    height: 52px;
+    cursor: pointer;
+}
+
+#nav-image {
+    position: relative;
+    left: 30%;
+    top: 30%;
+    width: 18px;
+    height: 18px;
+}
+
+#nav-label {
+    opacity: 0;
+    transition-duration: 1s;
+    transition-delay: initial;
+    transition-timing-function: cubic-bezier(.17, .67, .83, .67);
+    z-index: 0;
+    position: absolute;
+    margin-left: 3.1em;
+    margin-top: 1.3em;
+    letter-spacing: .1rem;
+    font-size: 80%;
+}
+
+#nav:hover #nav-label {
+    opacity: 1;
+}
+
+#nav-menu{
+    display: none;
+    background-color: #1D1D1F;
+    position:fixed;
+    width: 280px;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    overflow: hidden;
+    min-height: 500px;
+    z-index: -1;
+}
+
+#page-list {
+    position: absolute;
+    color: #DEDFE0;
+    height: 500px;
+    width: 190px;
+    left: 90px;
+    top: 30%;
+}
+
+#menu-list {}
+
+#list-menu-header{
+    color: white;
+    font-size: .8125rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: .3rem;
+    font-family: AvenirNextLTPro-Demi;
+}
+
+#menu-item {
+    color: #9c9c9c;
+    font-size: 0.8125rem;
+    font-weight: 400;
+    letter-spacing: .3rem;
+    font-family: AvenirNextLTPro-Demi;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    cursor: pointer;
+
+    transition: all 500ms cubic-bezier(.39,.575,.565,1);
+    transform: translate(0);
+}
+
+#menu-item:hover {
+    transition: all 500ms cubic-bezier(.39,.575,.565,1);
+    transform: translate(1em);
+    color: white;
+}
+
+#media-container {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 60px;
+    width: 100%;
+    border-top: 1px solid #DEDFE0;
+    overflow: hidden;
+}
+
+#facebook-container {
+    height: 60px;
+    width: 33%;
+    cursor: pointer;
+    transition: all 1s cubic-bezier(.17, .67, .83, .67);
+}
+
+#facebook-container:hover {
+    background-color: black;
+    transition: all 1s cubic-bezier(.17, .67, .83, .67);
+}
+
+#instagram-container {
+    border-width: 0 1px 0 1px;
+    border-style: solid;
+    border-color: #DEDFE0;
+    height: 60px;
+    width: 33%;
+    cursor: pointer;
+    transition: all 1s cubic-bezier(.17, .67, .83, .67);
+}
+
+#instagram-container:hover {
+    background-color: black;
+    transition: all 1s cubic-bezier(.17, .67, .83, .67);
+}
+
+#twitter-container {
+    height: 60px;
+    width: 33%;
+    cursor: pointer;
+    transition: all 1s cubic-bezier(.17, .67, .83, .67);
+}
+
+#twitter-container:hover {
+    background-color: black;
+    transition: all 1s cubic-bezier(.17, .67, .83, .67);
+}
+
+#icon {
+    top: 25%;
+    left: 38%;
+    position: relative;
+}
+
+#nav-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0.5;
+    background-color: rgba(29, 29, 31, 0.8);
+    z-index: 10;
+}
+/* Nav bar/menu css declarations finished */
+
+/* content body */
+#content-body {
+    flex: 1 0 auto;
+    width: 100%;
+    bottom: 150px;
+}
+
+#piano-background {
+    overflow-x: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+#footer {
+    flex: 0 0 auto;
+    bottom: 0;
+    background-color: rgb(29,29,31);
+    width: 100%;
+    height: 100px;
+}
+
+#info-div {
+    position: relative;
+    font-size: 16px;
+    font-family: sans-serif, monospace;
+    color: #f3f3f5;
+    top: 50%;
+    left: 40%;
+}
+
+.ipsum-paragraph {
+    margin: 175px;
+}
