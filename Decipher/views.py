@@ -30,3 +30,11 @@ def vote(request, question_id):
 
 def upload(request):
     return render(request, 'Decipher/upload.html')
+
+
+def purpose(request):
+    return render(request, 'Decipher/purpose.html')
+
+
+def archive(request):
+    return render(request, 'Decipher/archive.html')

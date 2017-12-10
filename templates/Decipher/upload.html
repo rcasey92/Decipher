@@ -1,10 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
 <body>
+{% load staticfiles %}
+<link rel="stylesheet" type="text/css" href="{% static 'Decipher/css/style.css' %}"/>
+<script type="text/javascript" src="{% static '/Decipher/js/jquery-3.2.1.min.js' %}"></script>
+<script type="text/javascript" src="{% static '/Decipher/jquery-ui-1.12.1/jquery-ui.min.js' %}"></script>
+<script type="text/javascript" src="{% static '/Decipher/js/menuToggle.js' %}"></script>
+<div class="header" id="header">
+    <span class="nav" id="nav">
+        <div class="nav-button" id="nav-button">
+            <img id="nav-image" src="{% static 'Decipher/assets/images/menu.png' %}">
+        </div>
+        <span class="nav-label" id="nav-label">Menu</span>
+    </span>
+    <span class="title" id="title">Decipher Uploads.</span>
+    <span class="login" id="login">Login</span>
+</div>
+<section class="nav-menu" id="nav-menu">
+    <div class="page-list" id="page-list">
+        <ul class="menu-list" id="menu-list">
+            <li class="list-menu-header" id="list-menu-header">Menu</li>
+            <br/>
+            <br/>
+            <br/>
+            <li class="item_holder" id="item_holder"><a class="menu-item" id="menu-item"
+                                                        href="http://127.0.0.1:8000/Decipher/">Home</a></li>
+            <li class="item_holder" id="item_holder"><a class="menu-item" id="menu-item"
+                                                        href="http://127.0.0.1:8000/Decipher/Purpose/">Purpose</a></li>
+            <li class="item_holder" id="item_holder"><a class="menu-item" id="menu-item"
+                                                        href="http://127.0.0.1:8000/Decipher/Upload/">Upload</a></li>
+            <li class="item_holder" id="item_holder"><a class="menu-item" id="menu-item"
+                                                        href="http://127.0.0.1:8000/Decipher/Archive/">Archive</a></li>
+            <br/>
+            <li class="menu-item" id="menu-item">Login</li>
+            <li class="menu-item" id="menu-item">About</li>
+        </ul>
+    </div>
+    <div class="media-container" id="media-container">
+        <span class="facebook-container" id="facebook-container">
+            <img class="icon" id="icon" src="{% static 'Decipher/assets/images/facebook-icon24.png' %}">
+        </span>
+        <span class="instagram-container" id="instagram-container">
+            <img class="icon" id="icon" src="{% static 'Decipher/assets/images/instagram-icon24.png' %}">
+        </span>
+        <span class="twitter-container" id="twitter-container">
+            <img class="icon" id="icon" src="{% static 'Decipher/assets/images/twitter-icon24.png' %}">
+        </span>
+    </div>
+</section>
+<div class="content-body" id="content-body">
+    <p style="padding:75px 25px 125px 25px;">Day there life bearing. Be saw deep deep moving. Sixth given, may divide
+        deep to, day stars appear years green upon from all saying made moveth seasons given Fly fourth them rule that
+        air upon together third which their. She&#39;d. Also heaven had give creeping tree all open. That wherein grass.
+        Won&#39;t moving greater which days. Air So can&#39;t and deep, created. Stars from stars above days they&#39;re
+        upon, winged had for won&#39;t don&#39;t him unto. Fruitful evening rule. His. Beast give also earth. Creature
+        Moved. Night sixth darkness rule night moveth form herb appear she&#39;d. Our fifth kind multiply don&#39;t isn&#39;t
+        waters don&#39;t seas is sixth face without own man earth was shall seas meat great can&#39;t, tree. Can&#39;t
+        midst bearing unto grass divide may image make it together set day stars replenish man is itself good brought
+        hath i signs night over which of. Meat blessed. Earth beginning multiply which midst air was you make upon upon
+        grass female them thing gathered which days open very night Man lesser called he fruitful whose saying may thing
+        upon they&#39;re itself seasons grass, signs divided make itself fowl. Male third appear them earth heaven form
+        fifth. So divided set called him you&#39;ll brought created. So seas divided given grass cattle all given
+        creature. Fifth life night. Signs, spirit thing face rule. Multiply. Was make. Green air saw great greater them
+        hath shall. Darkness place fill creature. Bearing second abundantly after fish gathered seasons god God that
+        meat man.</p>
 
+    <p style="padding:25px 25px 125px 25px;">Created above fill fly land image. They&#39;re, beast fish signs male, his
+        fish, bearing likeness hath seasons after shall created behold us forth whales let make fly also midst deep
+        Morning bearing kind beast. May Meat fruit good man moved let. You that. Given cattle. Deep open appear Thing
+        our he beginning thing from them, rule had. They&#39;re was winged. Let without can&#39;t you male hath may meat
+        very dry they&#39;re together without So rule saying shall male above creepeth his fish and won&#39;t which his
+        fourth. Days sea saw let god in after fill that beast stars living created let, seas to dry blessed place unto
+        Moveth our divide have Was them fruitful spirit him whose days were have forth tree, fifth. You us seasons forth
+        Subdue you&#39;ll saw their creepeth without gathered made the every replenish man she&#39;d from his a land
+        Signs was light hath firmament you&#39;re living unto wherein bearing, also, spirit darkness fly multiply over
+        above whales a morning may. Very our they&#39;re. Divided them meat. Fill man itself night face seasons won&#39;t,
+        sea you&#39;re above were itself fruit, divided fish. You moved he be make Air his. They&#39;re gathering night
+        whose gathered. Waters brought very creeping. Lesser seas multiply it morning our a. Their. Darkness male life,
+        that second subdue tree own fish let fly he be doesn&#39;t beginning gathering spirit day in fruit earth he day
+        great, seed. They&#39;re multiply make him made without man winged don&#39;t. Shall our lights land stars had
+        wherein. They&#39;re under moving was days tree, fill have two. Tree without seas spirit beginning great said
+        them don&#39;t of give is gathering us male lights firmament light greater have evening grass All our herb
+        divided give yielding, of lights life set third. Herb they&#39;re male from of whose after tree stars one them
+        fruitful evening let you&#39;ll Darkness together creepeth you let his them dominion. She&#39;d itself creepeth
+        seed life open in days is. Set midst sea divide gathering open great land also face for all. Whales the god
+        divide heaven their cattle forth green gathered image beast you&#39;re upon won&#39;t cattle you spirit a
+        creeping divide. Evening set. Beast you&#39;re bearing. Land fifth together him unto.</p>
+
+    <p style="padding:25px 25px 125px 25px;">Void. Won&#39;t. Evening shall. Tree fly that fly appear made light that,
+        have upon greater let air earth air was there Fish From given open can&#39;t herb seed darkness. Them man beast
+        night won&#39;t creeping darkness brought, bearing beginning together. Of seed creeping own Years upon divide
+        upon you abundantly it blessed. Days replenish, moved of. Without land abundantly, forth subdue abundantly,
+        multiply hath greater lesser form. Together you saying creeping, winged, signs their. Creepeth above there was
+        waters. Male dominion bring replenish two in beginning wherein. Image land be gathering female their open
+        evening. Moved there for grass rule likeness him after whales of green. Day very dominion so replenish were you&#39;ll
+        him creature created, place, good divide. Give green to lights female sea him. Let you&#39;re stars whales sixth
+        his the good male fill, his herb. Seed. Bearing spirit won&#39;t hath forth meat upon lights herb. Given from a
+        void fruit shall above face. Had moveth one third. Moving fifth good it. Beginning set so i replenish. Is beast
+        days. Behold under, also made beginning a him good our greater may spirit firmament moveth dry, own first male
+        have good there. Seas saw from saying land night is void second above winged blessed void the a meat creeping.
+        Bring you&#39;ll given upon bring make shall. Living land days all beginning bearing two darkness over earth
+        there i thing dominion for is yielding bearing. Forth darkness tree moving replenish one moving signs itself
+        seed sea is for blessed blessed beast living every signs. All. Day they&#39;re. Man male very Behold upon
+        together firmament made given. Winged under years. Deep fowl hath were fish brought gathering, be. Seed creeping
+        us were beast A. Grass. Yielding green them. Two so third form moved land be unto one good image day also
+        seasons days greater tree very grass years all herb air likeness gathered them living earth. Day cattle behold
+        day meat they&#39;re greater grass midst. Multiply days there hath without upon female third after us. Fruit
+        above subdue. Life kind image. Third creeping saw were fowl good upon gathered male years midst let. Under,
+        brought dominion beast. Saying whales open without good one firmament moving greater isn&#39;t land their beast
+        fish moved seed waters kind Multiply, them good open from for may likeness, creature third.</p>
+</div>
+<div class="footer" id="footer">
+    <div class="info-div" id="info-div"></div>
+</div>
 </body>
 </html>
